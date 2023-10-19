@@ -40,14 +40,13 @@ JavaScript: Employed for creating interactive elements and dynamic content, enha
 Frontend Frameworks and Libraries:
 
 Bootstrap: Utilized for responsive design and ensuring the website's compatibility with various devices and screen sizes.
-jQuery: Implemented for simplified DOM manipulation and adding interactive features to the website.
-Backend Framework (Optional, if applicable):
 
 GitHub Pages: Employed for hosting the website, enabling easy deployment directly from the Git repository.
-Domain Name Service (DNS) Provider: Utilized to configure domain settings and link the custom domain name (if applicable) to the hosted website.
+Domain Name Service (DNS) Provider: Utilized to configure domain settings and link the custom domain name to the hosted website.
 Code Editor:
 
 Visual Studio Code: Chosen for writing, editing, and debugging the HTML, CSS, and JavaScript code due to their robust features and extensions.
+
 Design and Prototyping:
 
 By leveraging these technologies, frameworks, and tools, the Personal Portfolio Website ensures an aesthetically pleasing, interactive, and performant user experience while providing efficient backend processes and analytics capabilities.
