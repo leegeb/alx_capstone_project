@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- title -->
+    <title>Lydia Gebre | Web Developer</title>
+    <!-- Main CSS-->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <!-- Web fonts-->
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i&amp;display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Navbar-->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- Navbar Logo-->
+                <img src="img/NAV-LOGO.png" class="logo" alt="navigation-logo" />
+                <ul id="sidemenu">
+                    <!-- Navbar menu - adding ID's for smooth scroll-->
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about-section">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <!-- Header - section  -->
+            <div class="header-text">
+                <p>Lydia Gebre</p>
+                <h1 class="home-name">
+                    <span>Web-Developer</span>
+                </h1>
+            </div>
+        </div>
+    </div>
+    <!-- About section -->
+    <div id="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="about-section-col-1">
+                    <img src="./img/DP.jpeg" alt="profile-image" />
+                </div>
+                <div class="about-section-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        "A Dubai-based freelancer and web developer with a passion for
+                        crafting digital experiences that captivate and engage.
+                        Transforming innovative ideas into polished realities, I combine
+                        creativity with precision, offering seamless web solutions that
+                        resonate with users. From elegant designs to efficient coding, I
+                        bring quality and ingenuity to every project, ensuring a lasting
+                        impact on the digital landscape."
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('education')">
+                            Education
+                        </p>
+                        <p class="tab-links" onclick="opentab('experience')">
+                            Experience
+                        </p>
+                        <p class="tab-links" onclick="opentab('mySkills')">My Skills</p>
+                    </div>
+                    <!-- Education-Section  -->
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li>
+                                <span>ALX</span><br />
+                                Intro-Software Engineering program at ALX(June, 2023 - Oct,
+                                2023), helped me gain a solid foundation in software
+                                engineering. I learned essential programming languages, data
+                                structures, algorithms, and problem-solving techniques. This
+                                experience allowed me to develop a strong theoretical
+                                understanding of software engineering principles, which I can
+                                now apply in practical settings.
+                            </li>
+                            <li>
+                                <span>Hilcoe School of computer science</span><br />Attended
+                                BSc Computer Science program for two years (2008 - 2010). My
+                                two year study at Hilcoe School of Computer Science provided
+                                me with a solid academic background in understanding and
+                                working with computers and computational systems. This
+                                education equipped me with fundamental knowledge in computer
+                                science, which has been the basis of my journey into software
+                                development.
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Experience-Section  -->
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>
+                                <span>Personal Web development Projects</span><br />
+                                Although I'm in the early stages of my career, I have been
+                                working on personal projects to further enhance my skills and
+                                apply what I've learned. These projects have given me
+                                practical experience in software development.
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Skills-Section  -->
+                    <div class="tab-contents" id="mySkills">
+                        <ul>
+                            <li>
+                                <span>HTML and CSS</span><br />Web content and presentation
+                            </li>
+                            <li><span>Web Development</span><br />Web app Development</li>
+                            <li>
+                                <span>Javascript</span><br />
+                                Client-side scripting language
+                            </li>
+                            <li><span>SQL</span><br />Adapting web layouts for screens</li>
+                            <li>
+                                <span>Python</span><br />Versatile, high-level, readable
+                                programming language
+                            </li>
+                            <li>
+                                <span>Responsive Design</span><br />Database management and
+                                query language.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services-section -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-html5"></i>
+                    <h2>HTML and CSS</h2>
+                    <p>
+                        Ability to create structured and semantically correct web
+                        pages.Proficiency in styling web pages with CSS, including layout,
+                        fonts, colors, and responsiveness.
+                    </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Responsive Design</h2>
+                    <p>
+                        Knowledge of responsive web design principles and the ability to
+                        create mobile-friendly layouts using CSS media queries.
+                    </p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-js"></i>
+                    <h2>JavaScript</h2>
+                    <p>Ability to write scripts to add interactivity to web pages.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Web Development</h2>
+                    <p>
+                        Familiarity with browser developer tools for inspecting and
+                        debugging web pages.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonials-section -->
+    <div class="testimonials-section">
+        <div class="container">
+            <h1 class="sub-title">Testimonials</h1>
+            <div class="testimonials-list">
+                <div class="client-info">
+                    <!-- client - One  -->
+                    <img src="img/yonas.jpeg" alt="Yonas Demissie" />
+                    <i class="fa-solid fa-quote-right"></i>
+                    <h6 class="client-name">Yonas Demissie</h6>
+                    <span class="client-role">Colleague</span>
+                    <p class="review-content">
+                        Working with Lydia Gebre was a game-changer for our online
+                        presence. Her web development skills brought our vision to life
+                        seamlessly. Lydia's attention to detail, coupled with her creative
+                        insights, resulted in a user-friendly website that truly stands
+                        out. We're grateful for her expertise in enhancing our digital
+                        footprint.
+                    </p>
+                </div>
+                <div class="client-info">
+                    <!-- Client - two  -->
+                    <img src="img/nadia.jpeg" alt="Nadia Hussein" />
+                    <i class="fa-solid fa-quote-right"></i>
+                    <h6 class="client-name">Nadia Hussein</h6>
+                    <span class="client-role">Entrepreneur</span>
+                    <p class="review-content">
+                        Lydia did an excellent creative job, addressing our request
+                        quickly, and also providing her own insight, being open to
+                        feedback and changes or edits when they arose. She worked with us
+                        the entire way. Highly recommended.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- portfolio-section -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Portfolio</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./img/01_headphones_desktop@2x.png" alt="project-1" />
+                    <div class="description">
+                        <h3>School Project - One</h3>
+                        <p>
+                            Implementation of HTML/CSS/Accessibility/Responsive design
+                            knowledge
+                        </p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./img/Headphones-2.png" alt="project-2" />
+                    <div class="description">
+                        <h3>School Project - two</h3>
+                        <p>Advanced CSS implementation on websites</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./img/apple-home-page-desktop-design.jpeg" alt="project-3" />
+                    <div class="description">
+                        <h3>Personal Project - Apple's Home Page</h3>
+                        <p>Creating replica of Apple's Home page from scratch</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- contact-section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left-col">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>lydiakgebre.com</p>
+                    <p><i class="fa-solid fa-phone"></i>0521998147</p>
+                    <!-- Social-media-icons-->
+                    <div class="social-media-icons">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/gebre_lydia"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/lydia_elijah/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/leegeb"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/lydia-gebre-7b7467201/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="img/" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right-col">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required />
+                        <input type="email" name="Email" placeholder="Your Email" required />
+                        <textarea name="Message" id="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> Lydia.</p>
+        </div>
+    </div>
+    <!-- Scripts-Section-->
+    <!-- JS for Tab-links  -->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <!-- JS for Sidemenu for mobile screen css  -->
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+    <!-- JS for Contact -Form- section  -->
+    <script>
+        const scriptURL =
+            "https://script.google.com/macros/s/AKfycbyFEwQgr6aXnfdrohHPkJSnsdhLQAPLAqfMKJnlatC7F6rZV9-VDEVJCx94zgpNfnc/exec";
+        const form = document.forms["submit-to-google-sheet"];
+        const msg = document.getElementById("msg");
+
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            fetch(scriptURL, { method: "POST", body: new FormData(form) })
+                .then((response) => {
+                    msg.innerHTML = "Message sent Successfully";
+                    setTimeout(function () {
+                        msg.innerHTML = "";
+                    }, 5000);
+                    form.reset();
+                })
+                .catch((error) => console.error("Error!", error.message));
+        });
+    </script>
+</body>
+
+</html>

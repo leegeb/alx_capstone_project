@@ -1,0 +1,495 @@
+/* Reset some default styles  */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Entire page style */
+body {
+    background: black;
+    color: white;
+}
+
+/* Header-Section  */
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./img/Main-DP.jpg);
+    background-size: cover;
+}
+
+.container {
+    padding: 30px 10%;
+}
+
+/* Navigation bar styling */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 160px;
+}
+
+/* Navigation menu items */
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+/* Navigation links */
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    position: relative;
+}
+
+/* Styling for link hover effect */
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: goldenrod;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.header-text {
+    margin-top: 12%;
+    font-size: 30px;
+    text-align: right;
+}
+
+.header-text p {
+    text-align: right;
+    margin-right: 5%;
+}
+
+.header-text h1 {
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.header-text h1 span {
+    color: darkgoldenrod;
+}
+
+/* About-Section */
+
+.about-section {
+    padding: 80px 0;
+    background-color: #ababab;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Column 1 */
+.about-section-col-1 {
+    flex-basis: 35%;
+}
+
+.about-section-col-1 img {
+    width: 80%;
+    border-radius: 15px;
+}
+
+/* Column 2 */
+.about-section-col-2 {
+    flex-basis: 60%;
+}
+
+.sub-title {
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: goldenrod;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+/* Initially hide tab contents */
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span {
+    color: goldenrod;
+    font-size: 16px;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+/* Services-Section  */
+#services {
+    padding: 30px 0;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.services-list div {
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.services-list div i {
+    font-size: 50px;
+}
+
+.services-list div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.services-list div:hover {
+    background: goldenrod;
+    transform: translateY(-10px);
+}
+
+/*Testimonials-Section*/
+.testimonials-section {
+    padding: 30px 0;
+}
+
+.testimonials-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.testimonials-list div {
+    background: goldenrod;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+}
+
+.fa-solid {
+    text-align: right;
+}
+
+.testimonials-list div i {
+    font-size: 50px;
+}
+
+.testimonials-list div h6 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.client-info img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.review-icon {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.review-content {
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+/* Portfolio-Section  */
+#portfolio {
+    padding: 50px 0;
+}
+
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.description h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.work:hover img {
+    transform: scale(1.1);
+}
+
+.work:hover .description {
+    height: 100%;
+}
+
+/* Contact-Section */
+#contact {
+    padding: 50px 0;
+}
+
+/* Styling for contact section columns */
+.contact-left-col {
+    flex-basis: 35%;
+}
+
+.contact-right-col {
+    flex-basis: 60%;
+}
+
+/* Styling for contact details and icons */
+.contact-left-col p {
+    margin-top: 30px;
+}
+
+.contact-left-col p i {
+    color: goldenrod;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+/* Styling for social media icons */
+.social-media-icons {
+    margin-top: 30px;
+}
+
+.social-media-icons a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: goldenrod;
+    display: inline-block;
+}
+
+/* Styling for contact buttons */
+.btn.btn2 {
+    display: inline-block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid goldenrod;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.5s;
+    color: white;
+}
+
+/* Hover effect for buttons */
+.btn.btn2:hover {
+    background: white;
+}
+
+.btn.btn2 {
+    display: inline-block;
+    background: goldenrod;
+}
+
+.contact-right-col form {
+    width: 100%;
+}
+
+/* Styling for form input fields and textarea */
+form input,
+form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+/* Styling for the form submit button */
+form btn2 {
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* Copyright text */
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    font-weight: 100;
+    font-size: small;
+    color: #ababab;
+}
+
+/* Hidden navigation icons for small screens */
+nav .fas {
+    display: none;
+}
+
+/* Small Screen CSS - Adjustments for screens with a max width of 600px */
+@media only screen and (max-width: 600px) {
+    #header {
+        background-image: url(img/BGPhone.jpg);
+    }
+
+    .header-text {
+        margin-top: 80px;
+        font-size: 25px;
+        padding-left: 10px;
+        text-align: center;
+        color: white;
+        font-weight: 300;
+    }
+
+    .header-text p {
+        text-align: center;
+    }
+
+    .header-text h1 {
+        margin-top: -6px;
+        font-size: 30px;
+    }
+
+    /* Show navigation icons and adjust their styles */
+    nav .fas {
+        display: block;
+        font-size: 25px;
+    }
+
+    /* Styling for the side menu */
+    nav ul {
+        background: goldenrod;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fas {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .subtitle {
+        font-size: 40px;
+    }
+
+    .about-section-col-1,
+    .about-section-col-2 {
+        flex-basis: 100%;
+    }
+
+    .about-section-col-1 {
+        margin-bottom: 30px;
+    }
+
+    .about-section-col-2 {
+        font-size: 14px;
+    }
+
+    .tab-links {
+        font-size: 16px;
+        margin-right: 20px;
+    }
+
+    /* Increases width for contact section  */
+    .contact-left-col,
+    .contact-right-col {
+        flex-basis: 100%;
+    }
+
+    .copyright {
+        font-size: 14px;
+    }
+}
+
+#msg {
+    color: #61b752;
+    margin-top: -40px;
+    display: block;
+}
